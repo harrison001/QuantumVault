@@ -1,0 +1,32 @@
+# Directories to ignore
+FD13-LiveCD/
+.DS_Store
+
+# Binary and large files
+*.exe
+*.qcow2
+*.bin
+*.zip
+freedos/**/freedos.img
+**/freedos.img
+!freedos.img
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Compiled files
+*.o
+*.obj
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Temporary files
+*.log
+*.tmp
+temp/
+tmp/
