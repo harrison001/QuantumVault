@@ -1,0 +1,53 @@
+qemu-img convert -f qcow2 -O raw FD13FULL.qcow2 freedos.img  
+
+nasm -f bin stage1.asm -o stage1.bin
+nasm -f bin stage2.asm -o stage2.bin
+
+dd if=stage1.bin of=freedos.img bs=446 count=1 conv=notrunc
+dd if=stage2.bin of=freedos.img bs=512 seek=1 count=3 conv=notrunc
+qemu-system-i386 -drive file=freedos.img,format=raw
+
+
+qemu-system-i386 -drive file=FD13FULL.img,format=raw -monitor stdio
+
+
+debug：
+qemu-system-i386 -drive file=freedos.img,format=raw -s -S
+
+
+c:
+set architecture i8086
+add-symbol-file freedos.img 0x7c00
+target remote 192.168.1.223:1234
+
+
+nasm -f bin attack.s -o attack.com
+nasm -f bin guard.s -o guard.com
+
+mv attack.com swp/
+mv guard.com swp/
+mkisofs -o shared.iso -R -J swp/
+qemu-system-i386 -hda freedos.img -cdrom shared.iso -boot d
+
+
+
+
+#copy file from dos to host machine:
+#1.copy file to img file 
+qemu-img create -f raw shared.img 100M
+mformat -F -i shared.img ::
+qemu-system-i386 -hda freedos.img -hdb shared.img
+
+#2. copy file from img file
+hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount shared.img
+sudo mount -t msdos /dev/disk25 swp 
+cp swp/OUTPUT.WEB output.webp     
+sudo umount swp    
+hdiutil detach /dev/disk25
+
+
+
+qemu-img convert -f qcow2 -O raw FD13FULL.qcow2 FD13FULL.img
+
+
+dd if=FD13FULL.img of=FD13FULL.img bs=512 count=1 seek=1 conv=notrunc
