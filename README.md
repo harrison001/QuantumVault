@@ -6,6 +6,7 @@ A military-grade, quantum-resistant cold storage solution designed as a secure a
 Encrypted cold storage system with AES-256 + custom DOS bootloader for pre-OS password-based decryption.
 
 Website: [https://harrisonsec.com/projects/quantumvault/](https://harrisonsec.com/projects/quantumvault/)
+[![Watch the video](https://img.youtube.com/vi/Ei_ltKTSEfU/hqdefault.jpg)](https://youtu.be/Ei_ltKTSEfU)
 
 ## Table of Contents
 - [Overview](#overview)
