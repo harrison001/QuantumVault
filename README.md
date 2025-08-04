@@ -3,7 +3,7 @@
 A military-grade, quantum-resistant cold storage solution designed as a secure alternative to traditional cryptocurrency cold wallets. QuantumVault provides a robust cross-platform security model for protecting your digital assets against both current and future threats.
 
 
-Encrypted cold storage system with AES-256 + custom DOS bootloader for pre-OS password-based decryption.
+Encrypted cold storage system with AES-256 + custom DOS bootloader for DOS-based decryption capabilities.
 
 Website: [https://harrisonsec.com/projects/quantumvault/](https://harrisonsec.com/projects/quantumvault/)
 
