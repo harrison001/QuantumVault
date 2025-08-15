@@ -16,7 +16,7 @@ It shows BIOS-based execution from `0x7C00`, MBR parsing, CHS extraction, shared
 
 ### How to debug
 
-[![Watch the video](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
+[![Watch the video](https://i.ytimg.com/vi/zp0SA043sSw/hqdefault.jpg)](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
 
 ## Table of Contents
 - [Overview](#overview)
