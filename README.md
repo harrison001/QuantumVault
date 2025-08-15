@@ -18,6 +18,11 @@ It shows BIOS-based execution from `0x7C00`, MBR parsing, CHS extraction, shared
 
 [![Watch the video](https://i.ytimg.com/vi/zp0SA043sSw/hqdefault.jpg)](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
 
+
+### Protected Model, GDT/IDT,isr and custom handlers
+[![Watch the video](https://i.ytimg.com/vi/uGisazvuBdc/hqdefault.jpg)](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
+
+
 ## Table of Contents
 - [Overview](#overview)
 - [Key Advantages](#key-advantages)
