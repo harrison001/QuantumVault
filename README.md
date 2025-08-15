@@ -14,6 +14,10 @@ Website: [https://harrisonsec.com/projects/quantumvault/](https://harrisonsec.co
 This video demonstrates the custom x86 bootloader included in `SentinelDOS/`.  
 It shows BIOS-based execution from `0x7C00`, MBR parsing, CHS extraction, shared memory writing, and INT 13h loading of Stage 2 with password protection.
 
+### How to debug
+
+[![Watch the video](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Key Advantages](#key-advantages)
