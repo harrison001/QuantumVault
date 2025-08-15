@@ -19,19 +19,18 @@ It shows BIOS-based execution from `0x7C00`, MBR parsing, CHS extraction, shared
 [![Watch the video](https://i.ytimg.com/vi/zp0SA043sSw/hqdefault.jpg)](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
 
 
-### Protected Model, GDT/IDT,isr and custom handlers
+### 🚀 From Real Mode to Protected Mode — Full GDT/IDT Control with Exception, IRQ, and Integrity Verification
 
 [![Watch the video](https://i.ytimg.com/vi/uGisazvuBdc/hqdefault.jpg)](https://youtu.be/zp0SA043sSw?si=rC3-HuAjqpsZeKWS)
 
-🚀 From Real Mode to Protected Mode — Full GDT/IDT Control with Exception, IRQ, and Integrity Verification
 
 This demo takes the CPU from 16-bit real mode into 32-bit protected mode, then sets up a complete, verifiable interrupt environment before any OS loads:
 
-✅ Custom GDT & IDT — two entry methods: runtime GDT patch & flat addressing
-✅ Exception handling for vectors 0–19 (with and without error codes)
-✅ Hardware interrupts: PIC remapping + IRQ0 (timer) handler with on-screen tick counter
-✅ Integrity verification — SGDT/SIDT + 16-bit checksum to detect GDT/IDT tampering in real time
-✅ Custom INT 0x30 handler with VGA debug output
+- ✅ Custom GDT & IDT — two entry methods: runtime GDT patch & flat addressing
+- ✅ Exception handling for vectors 0–19 (with and without error codes)
+- ✅ Hardware interrupts: PIC remapping + IRQ0 (timer) handler with on-screen tick counter
+- ✅ Integrity verification — SGDT/SIDT + 16-bit checksum to detect GDT/IDT tampering in real time
+- ✅ Custom INT 0x30 handler with VGA debug output
 
 
 
